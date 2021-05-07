@@ -7,6 +7,7 @@
 html{
     /* Background pattern from Toptal Subtle Patterns */
     background-image: url('../images/so-white.png');
+    scroll-behavior: smooth;
 }
 
 header{
@@ -81,13 +82,13 @@ header > p.sentence{
     padding: 1rem;
     font-style: italic;
 }
-/* 
+
 @media only screen and (max-width: 965px){
     header > h2.sentence{
         margin-bottom: 4rem;
     }
    
-} */
+}
 
 @media only screen and (max-width: 851px){
     header > h2.sentence{
@@ -101,4 +102,8 @@ header > p.sentence{
         margin-bottom: 0;
     }
    
+}
+
+section{
+    padding: 5rem;
 }
