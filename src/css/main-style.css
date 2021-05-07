@@ -1,0 +1,104 @@
+*{
+    font-family: "Titillium Web";
+    margin: 0;
+    color: black;
+}
+
+html{
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url('../images/so-white.png');
+}
+
+header{
+    display: flex;
+    position: relative;
+    background: #0c0c0c;
+    height: 100vh;
+    padding: 0 1rem;
+}
+
+#main_background_video{
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+nav{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    padding: 1rem 0;
+    right: 0;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.3);
+}
+
+nav > li {
+    padding: 0 1rem;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav > li > a{
+    color: white;
+    text-decoration: none;
+}
+
+nav > li > a:hover{
+    color: lightsalmon;
+}
+
+header > h2.sentence{
+    background: transparent;
+    color: lightsalmon;
+    font-size: 24px;
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4rem;
+    right: 0;
+    padding: 1rem;
+    font-style: italic;
+}
+
+header > p.sentence{
+    background: transparent;
+    color: lightsalmon;
+    font-size: 20px;
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-style: italic;
+}
+/* 
+@media only screen and (max-width: 965px){
+    header > h2.sentence{
+        margin-bottom: 4rem;
+    }
+   
+} */
+
+@media only screen and (max-width: 851px){
+    header > h2.sentence{
+        margin-bottom: 6rem;
+    }
+   
+}
+
+@media only screen and (max-width: 452px){
+    header > p.sentence{
+        margin-bottom: 0;
+    }
+   
+}
