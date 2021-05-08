@@ -144,6 +144,10 @@ section{
     height: 200px;
 }
 
+#contact{
+    display: flex;
+}
+
 footer{
     background-color: salmon;
     text-align: center;
