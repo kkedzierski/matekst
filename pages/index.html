@@ -7,6 +7,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../src/css/main-style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.5/css/lightslider.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.5/js/lightslider.min.js"></script>
+    
     <title>Matekst</title>
 </head>
 <body>
@@ -26,14 +34,52 @@
     </header>
     <main>
         <section id="whoami">
-            <p>Nazywam się Magdalena Kłosek i chętnie stworzę dla Państwa niepowtarzalny tekst. Staram się, by wszystko co wystukam na klawiaturze, było dopracowane i oryginalne. W myśl powiedzenia: "jeśli ktoś jest od wszystkiego, to jest od niczego", nie udaję, że jestem świetna we wszystkim. Zgłaszam się tylko do realizacji zleceń, które "czuję", znam temat i wiem, że pisanie ich sprawi mi przyjemność, a Państwu przyniesie zamierzoną korzyść. Dzięki takiemu podejściu, otrzymują Państwo dobrze dopracowaną treść, która jest wiarygodna i zachęca do jej przeczytania.</p>
+            <div id="whoami-context">
+                <h2>Kim jestem?</h2>
+                <p>Nazywam się Magdalena Kłosek i chętnie stworzę dla Państwa niepowtarzalny tekst. Staram się, by wszystko co wystukam na klawiaturze, było dopracowane i oryginalne. W myśl powiedzenia: "jeśli ktoś jest od wszystkiego, to jest od niczego", nie udaję, że jestem świetna we wszystkim. Zgłaszam się tylko do realizacji zleceń, które "czuję", znam temat i wiem, że pisanie ich sprawi mi przyjemność, a Państwu przyniesie zamierzoną korzyść. Dzięki takiemu podejściu, otrzymują Państwo dobrze dopracowaną treść, która jest wiarygodna i zachęca do jej przeczytania.</p>
+            </div>
+            <div id="whoami-picture">
+                <img src="../src/images/magda-profil.jpg" alt="Magdalena Kłosek">
+            </div>
         </section>
         <section id="porftolio">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at eleifend justo, eget porttitor leo. Nullam dapibus nibh velit, sed dictum felis consectetur ac. Maecenas ac rutrum leo, a molestie diam. Duis vel ligula non ante pulvinar fringilla. Etiam sit amet sodales mauris. Ut aliquet semper velit non viverra. Etiam dictum nisl ac turpis semper, at commodo enim convallis. Integer sit amet consequat elit. Phasellus a finibus magna, feugiat lacinia metus. Integer commodo sem sit amet fringilla mollis. In porta tempor bibendum. Duis egestas, quam ut mattis volutpat, arcu metus tempor justo, eget tristique mi turpis congue massa.</p>
+            <h2>Porfolio</h2>
+            <ul id="lightSlider">
+                <li>
+                    <a href="https://docdro.id/TnJyQHj">
+                        <img src="../src/images/portfolio items/jewlery.jfif" alt="Biżuteria">
+                        <h3>Sklep jubilerski</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://docdro.id/D13T356">
+                        <img src="../src/images/portfolio items/watch.jfif" alt="Zegarek">
+                        <h3>Sklep z zegarkami</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://docdro.id/53mh7zJ">
+                        <img src="../src/images/portfolio items/soaps.jfif" alt="Sklep z mydłami">
+                        <h3>Sklep z mydłami</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://ibb.co/WkdCPj4">
+                        <img src="../src/images/portfolio items/good-content.pl - logo.png" alt="Opinie z portalu goodContent">
+                        <h3>Opinie z portalu good-content</h3>
+                    </a>
+                </li>
+              </ul>
         </section>
         <section id="contact">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at eleifend justo, eget porttitor leo. Nullam dapibus nibh velit, sed dictum felis consectetur ac. Maecenas ac rutrum leo, a molestie diam. Duis vel ligula non ante pulvinar fringilla. Etiam sit amet sodales mauris. Ut aliquet semper velit non viverra. Etiam dictum nisl ac turpis semper, at commodo enim convallis. Integer sit amet consequat elit. Phasellus a finibus magna, feugiat lacinia metus. Integer commodo sem sit amet fringilla mollis. In porta tempor bibendum. Duis egestas, quam ut mattis volutpat, arcu metus tempor justo, eget tristique mi turpis congue massa.</p>
+            <h2>Kontakt do mnie</h2>
+            <p>Jeśli Państwa celem jest reklama, zwiększenie zasięgów oraz sprzedaży, zwrócenie uwagi i zainteresowanie czytelnika, zapraszam do współpracy. Chętnie napiszę dla Państwa tekst inny niż wszystkie. Tworzę z pasją i zaangażowaniem. </p>
         </section>
     </main>
+    <footer>
+        FOOTER
+    </footer>
+                 
+    <script src="../src/js/main-script.js"></script>
 </body>
 </html>
