@@ -33,6 +33,7 @@ header{
 }
 
 nav{
+    /* height: 80px; */
     display: flex;
     position: absolute;
     width: 100%;
@@ -43,7 +44,8 @@ nav{
 }
 
 nav > li {
-    padding: 0 1rem;
+    padding: 1rem 1.5rem;
+    font-size: 18px;
     list-style-type: none;
     text-align: center;
 }
@@ -59,7 +61,7 @@ nav > li > a:hover{
 
 header > h2.sentence{
     background: transparent;
-    color: lightsalmon;
+    color: floralwhite;
     font-size: 24px;
     z-index: 3;
     position: absolute;
@@ -72,7 +74,7 @@ header > h2.sentence{
 
 header > p.sentence{
     background: transparent;
-    color: lightsalmon;
+    color: floralwhite;
     font-size: 20px;
     z-index: 3;
     position: absolute;
@@ -106,4 +108,45 @@ header > p.sentence{
 
 section{
     padding: 5rem;
+
+}
+
+#whoami{
+    display: flex;
+}
+
+
+#whoami h2{
+    padding-bottom: 0.5rem;
+}
+
+
+#whoami img{
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+}
+
+#porftolio{
+    background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url('../images/portfolio-background.jpeg');
+}
+
+#porftolio > ul{
+    z-index: 3;
+}
+
+#porftolio > h2{
+    padding-bottom: 0.5rem;
+}
+
+#lightSlider > li > a > img{
+    width: 90%;
+    height: 200px;
+}
+
+footer{
+    background-color: salmon;
+    text-align: center;
+    padding: 5rem;
+    color: floralwhite;
 }
