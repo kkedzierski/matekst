@@ -7,17 +7,18 @@ $(document).ready(function() {
         speed:600,
         responsive : [
             {
-                breakpoint:1000,
+                breakpoint:800,
                 settings: {
-                    item:2,
+                    item:3,
                     slideMove:1,
+                    slideMargin:6,
                 }
             },
             {
-                breakpoint:800,
+                breakpoint:480,
                 settings: {
-                    item:1,
-                    slideMove:1,
+                    item:2,
+                    slideMove:1
                 }
             }
         ]

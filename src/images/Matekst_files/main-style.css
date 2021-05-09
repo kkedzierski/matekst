@@ -111,6 +111,7 @@ header > p.sentence{
 section{
     padding: 5rem;
     height:100vh;
+    /* width: 100vw; */
 
 }
 
@@ -146,6 +147,9 @@ section{
     background-repeat: no-repeat;
 }
 
+#lightSlider{
+    align-self: center;
+}
 
 #porftolio > ul{
     z-index: 3;
@@ -155,18 +159,9 @@ section{
     padding-bottom: 0.5rem;
 }
 
-#lightSlider > li > a{
-    text-decoration: none;
-}
-
 #lightSlider > li > a > img{
     width: 100%;
-}
-
-@media only screen and (max-width: 800px){
-    section{
-        height: 50%;
-    }
+    height: 100%;
 }
 
 #contact{
