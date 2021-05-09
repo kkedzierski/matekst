@@ -78,17 +78,34 @@
               </ul>
         </section>
         <section id="contact">
-            <div class="contact-email-form">
-                <form action="#">
-                    
-                </form>
-            </div>
             <h2>Kontakt do mnie</h2>
-            <p>Jeśli Państwa celem jest reklama, zwiększenie zasięgów oraz sprzedaży, zwrócenie uwagi i zainteresowanie czytelnika, zapraszam do współpracy. Chętnie napiszę dla Państwa tekst inny niż wszystkie. Tworzę z pasją i zaangażowaniem. </p>
+            <div id="contact-content">
+                <form id="email-form" method="POST" action="#">
+                    <label for="sender-email"> E-mail: </label>
+                    <input type="email" id="sender-email" required name="sender-email" placeholder="Twój e-mail">
+                    <label for="subject-email"> Temat: </label>
+                    <input type="text" id="subject-email" name="subject-email" placeholder="Temat wiadomości">
+                    <label for="content-email"> Treść: </label>
+                    <textarea id="content-email" name="content-email" rows="4" cols="50" maxlength="500" placeholder="Treść wiadomości"></textarea>
+                    <button type="submit">Wyślij wiadomość</button>
+                </form>
+                <div id="contact-describe">
+                    <p>Jeśli Państwa celem jest reklama, zwiększenie zasięgów oraz sprzedaży, zwrócenie uwagi i zainteresowanie czytelnika, zapraszam do współpracy. Chętnie napiszę dla Państwa tekst inny niż wszystkie. Tworzę z pasją i zaangażowaniem. </p>
+                    <p>
+                        <strong>Czym się zajmuję</strong>
+                        Teksty SEO, opisy produktów i usług, tworzenie artykułów blogowych, poradnikowych oraz reklamowych.
+                    </p>
+                    <p>
+                        Wypełnij formularz lub napisz do mnie: <a href="mailto:magda.klosek90@gmail.com">magda.klosek90@gmail.com</a>
+                    </p>
+                </div>
+               
+            </div>
         </section>
     </main>
     <footer>
-        FOOTER
+        <p>Magdalena Kłosek</p>
+        <p><a href="mailto:magda.klosek90@gmail.com">magda.klosek90@gmail.com</a></p>
     </footer>
                  
     <script src="./src/js/main-script.js"></script>

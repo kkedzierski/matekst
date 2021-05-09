@@ -144,8 +144,9 @@ section{
 
 /* Make opacity background*/
 #porftolio{
-    background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url('../images/portfolio-background.jpeg');
+    background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url('../images/portfolio-background.jpg'); 
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -155,6 +156,7 @@ section{
 
 #porftolio > h2{
     padding-bottom: 0.5rem;
+    margin-top: 8rem;
 }
 
 #lightSlider > li > a{
@@ -171,13 +173,78 @@ section{
     }
 }
 
-#contact{
+#contact-content{
     display: flex;
+    align-self: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1000px){
+    #contact-content{
+        display: block;
+    }
+}
+
+#email-form{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#email-form textarea{
+    resize: none;
+}
+#email-form 
+input[type=text],
+#email-form 
+input[type=email], 
+#email-form textarea{
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+  }
+
+#email-form 
+input[type=text]:focus,
+#email-form 
+input[type=email], 
+#email-form textarea:focus{
+    outline: none !important;
+    border: 2px solid salmon;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+#email-form button{
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: salmon;
+    outline: none !important;
+    border: 1px solid #ccc;
+    color: white;
+    font-size: 1rem;
+}
+
+#email-form button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#contact-describe{
+    display: flex;
+    flex-direction: column;
+    align-self: self-start;
+    margin-top: 5rem;
+    gap: 12px
 }
 
 footer{
-    background-color: salmon;
+    background-color: black;
+    opacity: 0.8;
     text-align: center;
     padding: 2rem;
+}
+
+footer p,
+footer p a{
     color: floralwhite;
 }
