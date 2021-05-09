@@ -18,6 +18,7 @@
             mail($to, $subject, $body);
 
             $message_send = true;
+            header('Location: index.php');
         }
 
 
