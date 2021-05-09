@@ -144,8 +144,9 @@ section{
 
 /* Make opacity background*/
 #porftolio{
-    background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url('../images/portfolio-background.jpg');
+    background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url('../images/portfolio-background.jpg'); 
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -178,11 +179,16 @@ section{
     align-items: center;
 }
 
+@media only screen and (max-width: 1000px){
+    #contact-content{
+        display: block;
+    }
+}
+
 #email-form{
     padding: 3rem;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 #email-form textarea{

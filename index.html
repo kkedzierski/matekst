@@ -80,13 +80,13 @@
         <section id="contact">
             <h2>Kontakt do mnie</h2>
             <div id="contact-content">
-                <form id="email-form" action="#">
+                <form id="email-form" method="POST" action="#">
                     <label for="sender-email"> E-mail: </label>
-                    <input type="email" required name="sender-email">
-                    <label for="subject"> Temat: </label>
-                    <input type="text" name="subject">
-                    <label for="content"> Treść: </label>
-                    <textarea name="content" rows="4" cols="70" maxlength="500"></textarea>
+                    <input type="email" id="sender-email" required name="sender-email" placeholder="Twój e-mail">
+                    <label for="subject-email"> Temat: </label>
+                    <input type="text" id="subject-email" name="subject-email" placeholder="Temat wiadomości">
+                    <label for="content-email"> Treść: </label>
+                    <textarea id="content-email" name="content-email" rows="4" cols="50" maxlength="500" placeholder="Treść wiadomości"></textarea>
                     <button type="submit">Wyślij wiadomość</button>
                 </form>
                 <div id="contact-describe">
