@@ -87,7 +87,7 @@
 
             <h2>Kontakt do mnie</h2>
             <div id="contact-content">
-                <form id="email-form" method="POST" action="#">
+                <form id="email-form" method="POST" action="email_sender.php">
                     <label for="sender-email"> E-mail: </label>
                     <input type="email" id="sender-email" required name="sender-email" placeholder="Twój e-mail">
                     <label for="subject-email"> Temat: </label>
