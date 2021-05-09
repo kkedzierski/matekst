@@ -24,6 +24,12 @@
     <title>Matekst</title>
 </head>
 <body>
+    <?php if($message_send): ?>
+    <div class="success-message">
+        <h3>Dziękuję za wiadomość, odezwę się wkrótce!</h3>
+    </div>
+
+    <?php else: ?>
     <header>
         <video id="main_background_video" src="./src/video/background_video_write_on_paper.mp4" autoplay muted loop></video>
         <nav>
@@ -78,15 +84,16 @@
               </ul>
         </section>
         <section id="contact">
+
             <h2>Kontakt do mnie</h2>
             <div id="contact-content">
                 <form id="email-form" method="POST" action="#">
                     <label for="sender-email"> E-mail: </label>
                     <input type="email" id="sender-email" required name="sender-email" placeholder="Twój e-mail">
                     <label for="subject-email"> Temat: </label>
-                    <input type="text" id="subject-email" name="subject-email" placeholder="Temat wiadomości">
+                    <input type="text" id="subject-email" required name="subject-email" placeholder="Temat wiadomości">
                     <label for="content-email"> Treść: </label>
-                    <textarea id="content-email" name="content-email" rows="4" cols="70" maxlength="500" placeholder="Treść wiadomości"></textarea>
+                    <textarea id="content-email" name="content-email" required rows="4" cols="70" maxlength="500" placeholder="Treść wiadomości"></textarea>
                     <button type="submit">Wyślij wiadomość</button>
                 </form>
                 <div id="contact-describe">
@@ -109,5 +116,6 @@
     </footer>
                  
     <script src="./src/js/main-script.js"></script>
+<?php endif; ?>
 </body>
 </html>
