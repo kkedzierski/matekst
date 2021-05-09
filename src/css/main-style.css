@@ -183,6 +183,10 @@ section{
     #contact-content{
         display: block;
     }
+    #email-form{
+        padding: 1rem 0 !important;
+    }
+
 }
 
 #email-form{
