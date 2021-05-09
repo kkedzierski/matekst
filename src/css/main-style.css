@@ -34,7 +34,6 @@ header{
 }
 
 nav{
-    /* height: 80px; */
     z-index: 5;
     display: flex;
     position: fixed;
@@ -68,7 +67,7 @@ header > h2.sentence{
     z-index: 3;
     position: absolute;
     bottom: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     right: 0;
     padding: 1rem;
     font-style: italic;
@@ -82,7 +81,7 @@ header > p.sentence{
     position: absolute;
     bottom: 0;
     right: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     padding: 1rem;
     font-style: italic;
 }
@@ -121,6 +120,10 @@ section{
 @media only screen and (max-width: 785px){
     #whoami{
         display: block;
+    }
+    #whoami img{
+        padding: 0 !important;
+        padding-top: 1rem !important;
     }
 }
 
