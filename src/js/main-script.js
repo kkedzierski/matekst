@@ -51,3 +51,26 @@ let currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+
+const isEmail = email =>  {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+  }
+
+// show success message when form message is submitted
+
+const showSuccesMessage = () =>{
+    if(isEmail($('#sender-email').val()) && $('#content-email') !== ''){
+        $('email-form > button').on("click", function(){
+            $('.success-message').slideDown(function() {
+                setTimeout(function() {
+                    $('.success-message').slideUp();
+                }, 5000);
+            });
+        });
+    }
+
+}
+
+showSuccesMessage();
+

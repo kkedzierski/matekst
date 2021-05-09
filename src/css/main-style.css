@@ -183,6 +183,23 @@ section{
     #contact-content{
         display: block;
     }
+    #email-form{
+        padding: 1rem 0 !important;
+    }
+
+}
+
+.success-message{
+    display: none;
+    position: static;
+    background-color: darkgreen;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.success-message h3{
+    letter-spacing: 1px;
+    color: floralwhite;
 }
 
 #email-form{
