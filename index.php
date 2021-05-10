@@ -28,8 +28,7 @@
     <div class="success-message">
         <h3>Dziękuję za wiadomość, odezwę się wkrótce!</h3>
     </div>
-
-    <?php else: ?>
+    <?php endif; ?>
     <header>
         <video id="main_background_video" src="./src/video/background_video_write_on_paper.mp4" autoplay muted loop></video>
         <nav>
@@ -116,6 +115,5 @@
     </footer>
                  
     <script src="./src/js/main-script.js"></script>
-<?php endif; ?>
 </body>
 </html>
