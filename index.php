@@ -24,11 +24,6 @@
     <title>Matekst</title>
 </head>
 <body>
-    <?php if($message_send): ?>
-    <div class="success-message">
-        <h3>Dziękuję za wiadomość, odezwę się wkrótce!</h3>
-    </div>
-    <?php endif; ?>
     <header>
         <video id="main_background_video" src="./src/video/background_video_write_on_paper.mp4" autoplay muted loop></video>
         <nav>
@@ -83,7 +78,12 @@
               </ul>
         </section>
         <section id="contact">
-
+        <!-- If message submited correctly show this success message -->
+            <?php if($message_send): ?>
+                <div class="success-message">
+                    <h3>Dziękuję za wiadomość, odezwę się wkrótce!</h3>
+                </div>
+            <?php endif; ?>
             <h2>Kontakt do mnie</h2>
             <div id="contact-content">
                 <form id="email-form" method="POST" action="#">
