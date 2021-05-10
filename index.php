@@ -16,20 +16,15 @@
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"
+    type="text/javascript"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.5/css/lightslider.min.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.5/js/lightslider.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.5/js/lightslider.min.js"></script>
     
     <title>Matekst</title>
 </head>
 <body>
-    <?php if($message_send): ?>
-    <div class="success-message">
-        <h3>Dziękuję za wiadomość, odezwę się wkrótce!</h3>
-    </div>
-
-    <?php else: ?>
     <header>
         <video id="main_background_video" src="./src/video/background_video_write_on_paper.mp4" autoplay muted loop></video>
         <nav>
@@ -84,7 +79,12 @@
               </ul>
         </section>
         <section id="contact">
-
+        <!-- If message submited correctly show this success message -->
+            <?php if($message_send): ?>
+                <div class="success-message">
+                    <h3>Dziękuję za wiadomość, odezwę się wkrótce!</h3>
+                </div>
+            <?php endif; ?>
             <h2>Kontakt do mnie</h2>
             <div id="contact-content">
                 <form id="email-form" method="POST" action="email_sender.php">
@@ -115,7 +115,6 @@
         <p><a href="mailto:magda.klosek90@gmail.com">magda.klosek90@gmail.com</a></p>
     </footer>
                  
-    <script src="./src/js/main-script.js"></script>
-<?php endif; ?>
+    <script type="text/javascript" src="./src/js/main-script.js"></script>
 </body>
 </html>

@@ -23,6 +23,6 @@
 
 
     }
-
-
+    $contactSectionUrl = $_SERVER['SERVER_NAME'] . '/#contact';
+    header('Location: '.$contactSectionUrl);
 ?>
