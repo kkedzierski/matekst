@@ -1,3 +1,14 @@
+<?php
+
+    session_start();
+    $message_send = false;
+    if(isset($_SESSION['message_send'])){
+        $message_send = true;
+    }
+     
+    
+?>
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -25,6 +36,7 @@
     <title>Matekst</title>
 </head>
 <body>
+    <!-- <div class="preload"><img src="http://i.imgur.com/KUJoe.gif"></div> -->
     <header>
         <video id="main_background_video" src="./src/video/background_video_write_on_paper.mp4" autoplay muted loop></video>
         <nav>
@@ -43,7 +55,15 @@
         <section id="whoami">
             <div id="whoami-context">
                 <h2>Kim jestem?</h2>
-                <p>Nazywam się Magdalena Kłosek i chętnie stworzę dla Państwa niepowtarzalny tekst. Staram się, by wszystko co wystukam na klawiaturze, było dopracowane i oryginalne. W myśl powiedzenia: "jeśli ktoś jest od wszystkiego, to jest od niczego", nie udaję, że jestem świetna we wszystkim. Zgłaszam się tylko do realizacji zleceń, które "czuję", znam temat i wiem, że pisanie ich sprawi mi przyjemność, a Państwu przyniesie zamierzoną korzyść. Dzięki takiemu podejściu, otrzymują Państwo dobrze dopracowaną treść, która jest wiarygodna i zachęca do jej przeczytania.</p>
+                <p>
+                    Nazywam się Magdalena Kłosek i chętnie stworzę dla Państwa niepowtarzalny tekst. 
+                </p>
+                <p>
+                    Staram się, by wszystko co wystukam na klawiaturze, było dopracowane i oryginalne. W myśl powiedzenia: <i>"jeśli ktoś jest od wszystkiego, to jest od niczego"</i>, nie udaję, że jestem świetna we wszystkim. Zgłaszam się tylko do realizacji zleceń, które "czuję", znam temat i wiem, że pisanie ich sprawi mi przyjemność, a Państwu przyniesie zamierzoną korzyść. 
+                </p>
+                <p>
+                    Dzięki takiemu podejściu, otrzymują Państwo dobrze dopracowaną treść, która jest wiarygodna i zachęca do jej przeczytania.
+                </p>
             </div>
             <div id="whoami-picture">
                 <img src="./src/images/magda-profil.jpg" alt="Magdalena Kłosek">
@@ -80,14 +100,15 @@
         </section>
         <section id="contact">
         <!-- If message submited correctly show this success message -->
-            <?php if($message_send): ?>
+        <?php if($message_send): ?>
                 <div class="success-message">
                     <h3>Dziękuję za wiadomość, odezwę się wkrótce!</h3>
                 </div>
-            <?php endif; ?>
+        <?php endif; ?>
+
             <h2>Kontakt do mnie</h2>
             <div id="contact-content">
-                <form id="email-form" method="POST" action="#">
+                <form id="email-form" method="POST" action="email_sender.php">
                     <label for="sender-email"> E-mail: </label>
                     <input type="email" id="sender-email" required name="sender-email" placeholder="Twój e-mail">
                     <label for="subject-email"> Temat: </label>

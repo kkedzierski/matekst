@@ -57,20 +57,26 @@ const isEmail = email =>  {
     return regex.test(email);
   }
 
-// show success message when form message is submitted
-
-const showSuccesMessage = () =>{
-    if(isEmail($('#sender-email').val()) && $('#content-email') !== ''){
-        $('email-form > button').on("click", function(){
-            $('.success-message').slideDown(function() {
-                setTimeout(function() {
-                    $('.success-message').slideUp();
-                }, 5000);
-            });
-        });
-    }
-
+// hode success message when form message is submitted
+if($('.success-message')){
+    setTimeout(function() {
+        $('.success-message').slideUp();
+    }, 5000);
 }
+    
 
-showSuccesMessage();
 
+//Show load bar before page is not full loaded
+// const showLoader = () => {
+//     $(document).ready(function(){
+//         $(function() {
+//             $(".preload").fadeOut(3000, function() {
+//                 $("header").fadeIn(1000);
+//                 $("main").fadeIn(1000);
+//                 $("footer").fadeIn(1000);      
+//             });
+//         });
+//     });
+// }
+
+// showLoader();

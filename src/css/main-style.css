@@ -11,6 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 header{
     display: flex;
     position: relative;
@@ -112,6 +113,13 @@ section{
 
 }
 
+@media only screen and (max-width: 785px){
+    section{
+        padding: 3rem;
+    }
+}
+
+
 #whoami{
     display: flex;
 }
@@ -129,6 +137,7 @@ section{
 #whoami-context,
 #whoami-picture{
     align-self: center;
+    font-size: 16px;
 }
 
 #whoami h2{
@@ -137,8 +146,8 @@ section{
 
 
 #whoami img{
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     padding: 1rem;
 }
 
@@ -156,6 +165,8 @@ section{
 
 #porftolio > h2{
     padding-bottom: 0.5rem;
+    font-size: 30px;
+    font-weight: bold;
     margin-top: 8rem;
 }
 
@@ -190,7 +201,7 @@ section{
 }
 
 .success-message{
-    display: none;
+    display: block;
     position: static;
     background-color: darkgreen;
     padding: 2rem;
@@ -265,3 +276,17 @@ footer p,
 footer p a{
     color: floralwhite;
 }
+
+/* Show load message bedore all page is loaded START */
+/* header,
+main,
+footer{
+    display: none;
+}
+.preload { width:100px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+} */
+/* Show load message bedore all page is loaded KONIEC */
