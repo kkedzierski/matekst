@@ -11,6 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 header{
     display: flex;
     position: relative;
@@ -129,6 +130,7 @@ section{
 #whoami-context,
 #whoami-picture{
     align-self: center;
+    font-size: 16px;
 }
 
 #whoami h2{
@@ -156,6 +158,8 @@ section{
 
 #porftolio > h2{
     padding-bottom: 0.5rem;
+    font-size: 30px;
+    font-weight: bold;
     margin-top: 8rem;
 }
 
@@ -190,7 +194,7 @@ section{
 }
 
 .success-message{
-    display: none;
+    display: block;
     position: static;
     background-color: darkgreen;
     padding: 2rem;
@@ -265,3 +269,17 @@ footer p,
 footer p a{
     color: floralwhite;
 }
+
+/* Show load message bedore all page is loaded START */
+/* header,
+main,
+footer{
+    display: none;
+}
+.preload { width:100px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+} */
+/* Show load message bedore all page is loaded KONIEC */
